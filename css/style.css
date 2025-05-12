@@ -518,6 +518,7 @@ h3.my-profession {
   flex: 0 0 33.33%;
   max-width: 33.33%;
   margin-bottom: 30px;
+  height: 100%;
 }
 .project .project-item-inner {
   border: 6px solid var(--bg-black-100);
@@ -527,7 +528,7 @@ h3.my-profession {
 }
 .project .project-item-inner .project-img img {
   width: 100%;
-
+ 
   display: block;
 }
 
