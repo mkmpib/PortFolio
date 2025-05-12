@@ -54,7 +54,7 @@
       <!-- ==== Main Content Start ======= -->
       <div class="main-content">
         <!-- ==== Home Section Start ======= -->
-        <section class="home section   " id="home">
+        <section class="home active section   " id="home">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
@@ -71,7 +71,7 @@
                   Database popular technologies such as Node Js,Express Js &
                   MongoDB
                 </p>
-                <a href="#contact" class="btn hire-me">Download CV</a>
+                <a href="mkresume.docx" class="btn">Download CV</a>
               </div>
               <div class="home-img padd-15">
                 <img src="images/my2.jpg" alt="" />
@@ -133,8 +133,8 @@
                     </div>
                     <div class="row">
                       <div class="buttons padd-15">
-                        <a href="#" class="btn">Download CV</a>
-                        <a href="#contact" class="btn hire-me">Hire Me</a>
+                      
+                        <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                       </div>
                     </div>
                   </div>
@@ -382,26 +382,28 @@
             <!-- === contact form ===== -->
              <div class="row">
               <div class="contact-form padd-15">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="9f28ec9a-b780-405c-8808-194ef13ed8a6">
                 <div class="row">
                   <div class="form-item col-6 padd-15">
                   <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Name">
+                  <input type="text" name="name" class="form-control" placeholder="Name">
                   </div>
                   </div>
                   <div class="form-item col-6 padd-15">
                     <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" name="email" class="form-control" placeholder="Email">
                     </div>
                     </div>
                 </div>
                 <div class="row "> <div class="form-item col-12 padd-15">
                   <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Subject">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject">
                   </div>
                   </div></div>
                   <div class="row "> <div class="form-item col-12 padd-15">
                     <div class="form-group">
-                  <textarea name="" class="form-control" id="" placeholder="MESSAGES"></textarea>
+                  <textarea name="" name="Message" class="form-control" id="" placeholder="MESSAGES"></textarea>
                     </div>
                     </div></div>
                     <div class="row "> <div class="form-item col-12 padd-15">
@@ -409,6 +411,7 @@
                     <button class="btn" type="submit">Send Message</button>
                       </div>
                       </div></div>
+                      </form>
               </div>
              </div>
           </div>
